@@ -12,6 +12,10 @@ public class JSON2CSV extends JFrame {
     private JTextField jsonTextField, csvTextField;
     private JButton jsonButton, convertButton;
 
+    public static void main(String[] args) {
+        new JSON2CSV();
+    }
+
     public JSON2CSV() {
         super("JSON to CSV Converter");
 
@@ -167,12 +171,5 @@ public class JSON2CSV extends JFrame {
         } catch (IOException e) {
             throw new IOException("Error writing CSV file");
         }
-    }
-    
-    
-    
-
-    public static void main(String[] args) {
-        new JSON2CSV();
     }
 }
